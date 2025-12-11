@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Form</title>
+    <style>
+      body.light {
+        background: whitE;
+        color: black;
+      }
+      body.dark {
+        background: black;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body class="light">
+    <button id="changeTheme">Change Theme</button><br /><br />
+    <form action="" id="studentform">
+      <input type="text" id="name" placeholder="enter your name" required />
+      <input type="number" id="age" placeholder="enter your age" required />
+      <input
+        type="text"
+        id="stack"
+        placeholder="enter your tech stack"
+        required
+      />
+
+      <button>Preview</button>
+    </form>
+
+    <!-- Preview what I have added in form -->
+
+    <h1>Preview:</h1>
+
+    <p id="result"></p>
+
+    <!-- Hidden button for saving data to localstorage -->
+
+    <button id="saveBtn" style="display: none">Save to Local Storage</button>
+
+    <h1>Data From LocalStorage</h1>
+    <div id="resultList"></div>
+
+    <script src="form.js"></script>
+  </body>
+</html>
